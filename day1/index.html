@@ -8,13 +8,16 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
 </head>
 <body>
-    <div id = "root"></div>
-    <div id = "reactRoot"></div>
+    <div id="htmlRoot" class="displayContent">
+        <h1>Hello from my side using HTML!</h1>
+    </div>
+    <div id = "jsRoot" class="displayContent"></div>
+    <div id = "reactRoot" class="displayContent"></div>
     <script>
-        const root = document.getElementById("root");
+        const jsRoot = document.getElementById("jsRoot");
         const jsHeading = document.createElement("h1");
         jsHeading.innerText = "Hello from my side using Javascript!";
-        root.appendChild(jsHeading);
+        jsRoot.appendChild(jsHeading);
     </script>
     <script
     crossorigin

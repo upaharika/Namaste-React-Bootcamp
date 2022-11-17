@@ -1,13 +1,17 @@
-#root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#htmlRoot {
+    color: rgba(74, 200, 118, 0.831);
+}
+
+#jsRoot {
     color: rgba(124, 90, 163, 0.831);
 }
 
 #reactRoot {
+    color: rgba(188, 58, 82, 0.831);
+}
+
+.displayContent {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(188, 58, 82, 0.831);
 }
