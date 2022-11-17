@@ -1,0 +1,13 @@
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(124, 90, 163, 0.831);
+}
+
+#reactRoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(188, 58, 82, 0.831);
+}

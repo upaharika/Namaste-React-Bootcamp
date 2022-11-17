@@ -3,11 +3,30 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Namaste React</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <title>Assignment-1</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
 </head>
 <body>
-    <h1>Hello World</h1>
-    
+    <div id = "root"></div>
+    <div id = "reactRoot"></div>
+    <script>
+        const root = document.getElementById("root");
+        const jsHeading = document.createElement("h1");
+        jsHeading.innerText = "Hello from my side using Javascript!";
+        root.appendChild(jsHeading);
+    </script>
+    <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <script>
+    const reactRoot = ReactDOM.createRoot(document.getElementById("reactRoot"));
+    const reactHeading = React.createElement("h1", {}, "Hello from my side using React!");
+    reactRoot.render(reactHeading);
+  </script>
 </html>
